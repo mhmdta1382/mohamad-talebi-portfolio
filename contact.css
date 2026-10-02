@@ -1,0 +1,88 @@
+/* CONTACT PAGE ONLY — same visual language as Home/About/Skills. */
+.contact-page{background:#fff}
+.contact-main{overflow:hidden;padding-bottom:0}
+.contact-main .section-shell{max-width:1440px}
+
+.contact-hero{position:relative;display:grid;grid-template-columns:1.2fr .72fr;gap:70px;align-items:end;padding-top:64px;padding-bottom:48px;border-bottom:1px solid var(--line);overflow:hidden}
+.contact-kicker{font:400 20px var(--pixel);letter-spacing:.04em;color:var(--navy);display:flex;align-items:center;gap:14px}
+.contact-kicker .pixel-mark{width:10px;height:10px;background:var(--orange);display:inline-block;box-shadow:8px -6px 0 var(--orange),14px 3px 0 var(--navy)}
+.contact-hero h1{font:400 clamp(58px,5.5vw,92px)/.88 var(--pixel);letter-spacing:.015em;color:var(--navy);margin:25px 0 0}
+.contact-hero h1 span{color:var(--orange)}
+.contact-hero-copy{display:flex;gap:18px;max-width:390px;margin-bottom:8px;position:relative;z-index:2}
+.contact-intro-line{width:3px;flex:0 0 3px;background:var(--navy);position:relative}
+.contact-intro-line:before{content:"";position:absolute;width:9px;height:9px;left:-3px;top:-2px;background:var(--orange)}
+.contact-hero-copy p{font-size:17px;line-height:1.6;margin:0}
+.contact-pixels{position:absolute;right:var(--pad);top:42px;width:125px;height:105px;opacity:.65}
+.contact-pixels i{position:absolute;width:14px;height:14px;background:var(--orange);display:block}
+.contact-pixels i:nth-child(1){right:0;top:0}.contact-pixels i:nth-child(2){right:24px;top:20px;background:var(--navy)}.contact-pixels i:nth-child(3){right:48px;top:39px}.contact-pixels i:nth-child(4){right:74px;top:58px;background:var(--navy)}.contact-pixels i:nth-child(5){right:8px;top:52px;background:var(--navy)}.contact-pixels i:nth-child(6){right:32px;top:78px}.contact-pixels i:nth-child(7){right:57px;top:13px;background:var(--navy)}.contact-pixels i:nth-child(8){right:88px;top:33px}
+
+.contact-grid{display:grid;grid-template-columns:minmax(0,1.75fr) minmax(300px,.92fr);gap:18px;padding-top:18px;padding-bottom:42px}
+.message-card,.contact-card{min-width:0}
+.message-card{border:1px solid var(--navy);padding:26px 28px 28px;background:#fff;position:relative;overflow:hidden}
+.message-card:after{content:"";position:absolute;right:-2px;bottom:-2px;width:66px;height:66px;background:radial-gradient(var(--orange) 1.2px,transparent 1.2px);background-size:7px 7px;opacity:.5}
+.contact-card{background:var(--navy);color:#fff;padding:26px 26px 22px;position:relative;overflow:hidden;border:1px solid var(--navy)}
+.contact-card:after{content:"";position:absolute;right:-4px;bottom:-4px;width:62px;height:62px;background:radial-gradient(var(--orange) 1.2px,transparent 1.2px);background-size:7px 7px;opacity:.65}
+.card-heading{display:flex;align-items:center;gap:12px;margin-bottom:28px}
+.card-heading .panel-mark{width:14px;height:14px;background:var(--orange);display:inline-block;box-shadow:7px 0 0 rgba(255,101,31,.25);flex:0 0 auto}
+.card-heading h2{font:400 24px var(--pixel);letter-spacing:.04em;margin:0;color:inherit}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.form-field,label{display:block}
+.form-row label,.form-field{margin-bottom:24px}
+.form-row label>span,.form-field>span{display:block;font:400 16px var(--pixel);color:var(--navy);letter-spacing:.04em;margin:0 0 9px}
+.form-field>span:before,.form-row label>span:before{content:"";display:inline-block;width:8px;height:8px;background:var(--orange);margin-right:8px;vertical-align:1px}
+input,select,textarea{width:100%;border:1px solid rgba(16,47,95,.62);background:#fff;color:var(--navy);font:400 16px var(--body);padding:14px 15px;border-radius:0;outline:none;box-shadow:none}
+input,select{height:50px}
+textarea{min-height:145px;resize:vertical;line-height:1.55}
+input::placeholder,textarea::placeholder{color:#7290b1;opacity:1}
+input:focus,select:focus,textarea:focus{border-color:var(--orange);box-shadow:4px 4px 0 rgba(255,101,31,.16)}
+select{appearance:auto}
+.send-button{display:inline-flex;align-items:center;gap:24px;border:1px solid var(--orange);background:var(--orange);color:#fff;padding:16px 28px;font:400 19px var(--pixel);box-shadow:5px 5px 0 var(--navy);cursor:pointer;transition:transform .18s,box-shadow .18s}
+.send-button:hover,.send-button:focus-visible{transform:translate(3px,3px);box-shadow:2px 2px 0 var(--navy)}
+.send-button span{font-size:23px;line-height:0}
+.form-note{margin:13px 0 0;color:#6b7f99;font-size:11px;line-height:1.4}
+
+.contact-card .card-heading{padding-bottom:20px;border-bottom:1px solid rgba(255,255,255,.3);margin-bottom:0}
+.contact-item{display:grid;grid-template-columns:54px 1fr;gap:15px;align-items:center;padding:19px 0;border-bottom:1px solid rgba(255,255,255,.3)}
+.contact-icon{width:38px;height:38px;background:var(--orange);color:var(--navy);display:flex;align-items:center;justify-content:center;font:400 18px var(--pixel);border:1px solid var(--orange);box-shadow:4px 4px 0 rgba(255,255,255,.1)}
+.contact-item span{display:block;font:400 13px var(--pixel);color:#dfe8f2;letter-spacing:.05em;margin-bottom:4px}
+.contact-item strong,.contact-item a{display:block;font:400 15px var(--body);color:#fff;word-break:break-word}
+.contact-item a:hover,.contact-item a:focus-visible{color:var(--orange)}
+.contact-art{position:relative;display:grid;grid-template-columns:1fr 92px;gap:18px;align-items:center;margin-top:26px;min-height:154px}
+.art-grid{position:absolute;left:0;top:0;bottom:0;width:68%;background-image:linear-gradient(rgba(255,255,255,.09) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.09) 1px,transparent 1px);background-size:14px 14px;border:1px solid rgba(255,255,255,.28)}
+.contact-pets{position:relative;width:68%;height:154px;z-index:1;overflow:hidden;image-rendering:pixelated}
+.pixel-pet{position:absolute;display:block;width:30px;height:24px;background:var(--orange);box-shadow:5px 5px 0 rgba(255,255,255,.12);animation:pet-walk 7s steps(16,end) infinite}
+.pixel-pet:before,.pixel-pet:after{content:"";position:absolute;background:var(--orange)}
+.pixel-pet:before{width:8px;height:8px;left:3px;top:-6px;box-shadow:16px 0 0 var(--orange)}
+.pixel-pet:after{width:7px;height:7px;right:-7px;top:7px;box-shadow:0 8px 0 var(--orange)}
+.pixel-pet i{position:absolute;z-index:1;width:4px;height:4px;background:var(--navy);left:8px;top:8px;box-shadow:10px 0 0 var(--navy)}
+.pixel-cat{left:9%;bottom:30px;animation-delay:-1s}
+.pixel-dog{left:42%;bottom:54px;background:#fff;animation-delay:-4s}
+.pixel-dog:before,.pixel-dog:after{background:#fff}.pixel-dog:before{box-shadow:16px 0 0 #fff}.pixel-dog:after{box-shadow:0 8px 0 #fff}.pixel-dog i{background:var(--orange);box-shadow:10px 0 0 var(--orange)}
+.pixel-bird{left:67%;bottom:91px;width:22px;height:18px;background:var(--orange);animation:pet-hop 3.4s steps(5,end) infinite}
+.pixel-bird:before{width:6px;height:6px;left:2px;top:-5px;box-shadow:none}.pixel-bird:after{width:8px;height:5px;right:-8px;top:6px;box-shadow:none}.pixel-bird i{width:4px;height:4px;left:12px;top:5px;box-shadow:none;background:var(--navy)}
+@keyframes pet-walk{0%{transform:translateX(-22px)}50%{transform:translateX(92px)}100%{transform:translateX(-22px)}}
+@keyframes pet-hop{0%,100%{transform:translate(0,0)}50%{transform:translate(12px,-10px)}}
+.contact-art p{position:relative;z-index:1;font:400 16px/1.18 var(--pixel);letter-spacing:.04em;margin:0;color:#fff}
+
+
+@media(max-width:1100px){
+  .contact-hero{grid-template-columns:1fr .7fr;gap:35px}
+  .contact-grid{grid-template-columns:1fr 300px}
+  .contact-card{padding:22px 20px}
+  .contact-art{grid-template-columns:1fr 80px;gap:10px}.contact-pets{width:68%}.contact-art p{font-size:14px}
+}
+@media(max-width:760px){
+  .contact-hero{display:block;padding-top:38px;padding-bottom:32px}
+  .contact-hero h1{font-size:clamp(48px,13vw,70px);margin-top:20px}
+  .contact-hero-copy{margin-top:28px}.contact-hero-copy p{font-size:15px}
+  .contact-pixels{right:20px;top:30px;transform:scale(.7);transform-origin:top right}
+  .contact-grid{display:flex;flex-direction:column;padding-top:14px;padding-bottom:30px}
+  .message-card,.contact-card{padding:18px 16px 22px}
+  .form-row{grid-template-columns:1fr;gap:0}
+  .card-heading h2{font-size:20px}.form-row label>span,.form-field>span{font-size:14px}
+  input,select,textarea{font-size:15px}.message-field textarea{min-height:160px}
+  .send-button{width:100%;justify-content:center}
+  .contact-item{grid-template-columns:48px 1fr}.contact-item strong{font-size:14px}
+  .contact-art{grid-template-columns:1fr 84px;min-height:145px}.contact-pets{height:145px;width:68%}.contact-art p{font-size:13px}
+}
+@media(prefers-reduced-motion:reduce){.send-button{transition:none}.pixel-pet{animation:none}}

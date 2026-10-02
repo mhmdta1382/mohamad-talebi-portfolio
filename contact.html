@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Contact Mohamad Talebi — Product Designer.">
+  <title>Contact — Mohamad Talebi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body class="contact-page">
+  <div class="noise" aria-hidden="true"></div>
+
+  <!-- Header structure intentionally matches the existing Home/About/Skills header. -->
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Mohamad Talebi home">
+      <img src="assets/foxlogo.png" alt="Mohamad Talebi home">
+    </a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="index.html">HOME</a>
+      <a href="index.html#work">WORK</a>
+      <a href="about.html">ABOUT</a>
+      <a href="skills.html">SKILLS</a>
+      <a href="portfolio.html">PORTFOLIO</a>
+      <a class="active" href="contact.html" aria-current="page">CONTACT</a>
+    </nav>
+    <div class="header-tools">
+      <a class="portfolio-download" href="assets/mohamad%20talebi%20portfolio%20%282%29%20%281%29.pdf" download="Mohamad-Talebi-Portfolio.pdf">Download Portfolio</a>
+      <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-nav" aria-hidden="true">
+    <a href="index.html">HOME</a>
+    <a href="index.html#work">WORK</a>
+    <a href="about.html">ABOUT</a>
+    <a href="skills.html">SKILLS</a>
+    <a href="portfolio.html">PORTFOLIO</a>
+    <a class="active" href="contact.html" aria-current="page">CONTACT</a>
+  </div>
+
+  <main class="contact-main">
+    <section class="contact-hero section-shell">
+      <div class="contact-hero-title">
+        <div class="contact-kicker"><span class="pixel-mark"></span>CONTACT</div>
+        <h1>LET’S BUILD<br><span>SOMETHING USEFUL.</span></h1>
+      </div>
+      <div class="contact-hero-copy">
+        <span class="contact-intro-line"></span>
+        <p>Have a project in mind?<br>I’d love to hear about it.<br>Feel free to reach out and<br>let’s create something great together.</p>
+      </div>
+      <div class="contact-pixels" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    </section>
+
+    <section class="contact-grid section-shell">
+      <form class="message-card" id="contact-form" action="https://formspree.io/f/xwlpojpv" method="POST">
+        <div class="card-heading"><span class="panel-mark"></span><h2>SEND ME A MESSAGE</h2></div>
+
+        <div class="form-row">
+          <label>
+            <span>YOUR NAME</span>
+            <input type="text" name="name" autocomplete="name" placeholder="Your name" required>
+          </label>
+          <label>
+            <span>EMAIL ADDRESS</span>
+            <input type="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+          </label>
+        </div>
+
+        <label class="form-field">
+          <span>PROJECT TYPE</span>
+          <select name="projectType" required>
+            <option value="" selected>Select project type</option>
+            <option>Product Design</option>
+            <option>UI / UX Design</option>
+            <option>Website Design</option>
+            <option>Mobile App Design</option>
+            <option>Other</option>
+          </select>
+        </label>
+
+        <label class="form-field message-field">
+          <span>TELL ME ABOUT YOUR PROJECT</span>
+          <textarea name="message" rows="7" placeholder="Tell me about your project, goals, timeline, and anything else that might help..." required></textarea>
+        </label>
+
+        <input type="hidden" name="_subject" value="New Portfolio Contact — Mohamad Talebi">
+        <button class="send-button" type="submit">SEND MESSAGE <span>↗</span></button>
+        <p class="form-note" aria-live="polite">This form is ready for the backend connection.</p>
+      </form>
+
+      <aside class="contact-card">
+        <div class="card-heading"><span class="panel-mark"></span><h2>GET IN TOUCH</h2></div>
+
+        <div class="contact-item">
+          <div class="contact-icon">@</div>
+          <div><span>EMAIL</span><strong>mhmdta1382@gmail.com</strong></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">☎</div>
+          <div><span>PHONE</span><strong>09217941904</strong></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">in</div>
+          <div><span>LINKEDIN</span><a href="https://www.linkedin.com/in/mohammad-talebi-bba485437" target="_blank" rel="noopener noreferrer">www.linkedin.com/in/mohammad-talebi-bba485437</a></div>
+        </div>
+
+        <div class="contact-art">
+          <div class="art-grid"></div>
+          <div class="contact-pets" aria-label="Animated pixel pets" role="img">
+            <span class="pixel-pet pixel-cat"><i></i></span>
+            <span class="pixel-pet pixel-dog"><i></i></span>
+            <span class="pixel-pet pixel-bird"><i></i></span>
+          </div>
+          <p>GOOD<br>DESIGN<br>BUILDS<br>BETTER<br>EXPERIENCES.</p>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

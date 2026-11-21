@@ -1,0 +1,100 @@
+.works-intro{position:relative;overflow:hidden;text-align:center;background:linear-gradient(180deg,#f5fbfd 0%,#e2f2f8 40%,#c9e5ed 76%,#afd6df 100%);padding:36px 24px 64px;isolation:isolate}
+.works-eyebrow{color:var(--orange);font:28px var(--pixel);margin:0}
+.works-intro h1{font:clamp(64px,8vw,108px)/1 var(--pixel);margin:8px 0;color:#091d4d}
+.works-intro>p:last-child{font-size:18px;line-height:1.5;margin:12px auto 0;max-width:650px}
+.ocean{position:relative;isolation:isolate;background:#005382 url('assets/works/water-v3.png') repeat;background-size:760px;overflow:hidden;padding-top:72px}
+.ocean:before{content:'';position:absolute;inset:-1px 0 auto;height:190px;background:linear-gradient(180deg,#afd6df 0%,#afd6dff2 8%,#a2cfdcd4 22%,#8ac1d19c 40%,#65a9be4d 65%,#65a9be00 100%);z-index:0;pointer-events:none}
+.ocean-water{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:-1}
+.island-map{position:relative;z-index:1;max-width:1440px;margin:auto;height:calc(var(--rows,3)*310px + 180px)}
+.project-island{position:absolute;left:var(--x);top:calc(var(--row)*310px + 22px);width:clamp(225px,23vw,292px);transform:translateX(-50%);text-align:left}
+.island-content{display:block;position:relative;transition:transform .25s;color:#0b204c;border-radius:24px}
+@media(hover:hover) and (pointer:fine){.island-content:hover{transform:scale(1.035)}}
+.island-content:focus-visible{outline:none}
+.island-content:focus-visible .island-label{outline:2px solid var(--orange);outline-offset:4px}
+.island-art{display:block;width:100%;height:208px;object-fit:contain;image-rendering:pixelated}
+.island-label{position:relative;display:block;width:90%;margin:-32px auto 0;padding:11px 14px;color:#f4fcff;background:linear-gradient(135deg,rgba(29,91,125,.70),rgba(5,33,64,.80));border:1px solid rgba(176,226,248,.38);border-radius:16px;box-shadow:0 8px 20px rgba(0,20,45,.20),inset 0 1px 0 rgba(215,244,255,.15);backdrop-filter:blur(14px) saturate(135%);-webkit-backdrop-filter:blur(14px) saturate(135%);text-shadow:0 1px 2px rgba(0,20,40,.35)}
+.island-label strong{display:block;font:26px/1 var(--pixel)}
+.island-label small{display:block;font-size:13px;line-height:1.4;margin-top:4px}
+.island-label .pending{font-size:11px;color:#c6deed;margin-top:5px}
+.island-number{position:absolute;top:22px;left:24%;background:var(--orange);color:white;font:28px var(--pixel);padding:4px 16px 4px 8px;clip-path:polygon(0 0,100% 0,80% 50%,100% 100%,0 100%);z-index:2}
+.project-island:after{content:'';position:absolute;z-index:-1;bottom:-16px;left:8%;width:84%;height:35px;border-bottom:3px solid #b5f7ff;border-radius:50%;animation:shore 6s ease-in-out infinite}
+.no-script{padding:40px;color:white}.no-script a{text-decoration:underline}
+.works-page .mobile-nav[aria-hidden="true"]{visibility:hidden}.works-page .mobile-nav.open{visibility:visible}
+.works-cloud{position:absolute;z-index:-1;width:clamp(180px,24vw,340px);height:160px;background:url('assets/works/cloud.png') center/contain no-repeat;pointer-events:none;image-rendering:pixelated;animation:cloud-travel 48s ease-in-out infinite alternate}
+.cloud-left{left:-5%;top:5px}.cloud-right{right:-5%;top:40px;animation-delay:-23s;animation-duration:62s}
+.works-intro:before,.works-intro:after{content:'';position:absolute;width:90px;height:48px;bottom:4px;background:url('assets/works/cloud.png') center/contain no-repeat;image-rendering:pixelated;animation:cloud-travel 37s ease-in-out infinite alternate;pointer-events:none}
+.works-intro:before{left:15%}.works-intro:after{right:18%;animation-delay:-18s}
+.sailboat{position:absolute;left:6%;top:62%;width:240px;height:250px;background:url('assets/works/boat.png') center/contain no-repeat;image-rendering:pixelated;transform-origin:50% 85%;animation:rock 6s ease-in-out infinite;pointer-events:none}
+.lighthouse{position:absolute;z-index:1;right:6%;top:42px;width:120px;height:150px;background:url('assets/works/lighthouse.png') center/contain no-repeat;image-rendering:pixelated;pointer-events:none}
+.ocean-islet{position:absolute;width:130px;height:90px;background:url('assets/works/rock.png') center/contain no-repeat;image-rendering:pixelated;pointer-events:none;transform:translateX(-50%)}
+.ocean-islet:nth-child(2n){width:105px;height:75px}
+.ocean-bird{position:absolute;width:36px;height:15px;pointer-events:none;animation:bird-glide 12s ease-in-out infinite alternate}
+.ocean-bird:before,.ocean-bird:after{content:'';position:absolute;top:3px;width:20px;height:5px;background:#fff9e8;box-shadow:4px 3px #fff9e8;transform:rotate(25deg)}
+.ocean-bird:after{left:17px;transform:rotate(-25deg);box-shadow:-4px 3px #fff9e8}
+.ocean:after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,#66d9f633,transparent 15%,#001e4d18);pointer-events:none}
+.scene-paused *,.scene-paused *:after,.scene-paused *:before{animation-play-state:paused!important}
+@keyframes cloud-travel{from{translate:-24px 0}to{translate:24px 0}}
+@keyframes rock{0%,100%{transform:translateY(0) rotate(-1.5deg)}50%{transform:translateY(3px) rotate(1.5deg)}}
+@keyframes bird-glide{from{transform:translate(-12px,0)}to{transform:translate(20px,-5px)}}
+@keyframes shore{50%{opacity:.4;transform:scaleX(1.08)}}
+
+@media(min-width:761px) and (max-width:1023px){
+  .sailboat{top:auto;bottom:28px;left:8%;width:160px;height:170px}
+}
+/* On smaller screens, content height determines spacing between islands. */
+@media(max-width:760px){
+  .works-intro{padding:32px 20px 56px}
+  .works-intro>p:last-child{font-size:16px}
+  .works-cloud{opacity:.9;width:150px;height:90px;top:18px}
+  .cloud-left{left:-75px}
+  .cloud-right{right:-75px}
+  .works-intro:before{left:4%}
+  .works-intro:after{right:4%}
+  .ocean{padding-top:110px}
+  .ocean:before{height:170px}
+  .island-map{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:64px;
+    height:auto;
+    padding:16px 28px 260px;
+  }
+  .project-island{
+    position:relative;
+    left:auto;
+    top:auto;
+    width:min(280px,100%);
+    transform:none;
+    flex:none;
+  }
+  .island-art{height:auto;aspect-ratio:360/260}
+  .island-label{width:94%;margin-top:-28px}
+  .island-label small{font-size:14px}
+  .island-label .pending{font-size:12px}
+  .sailboat{
+    left:12%;
+    top:auto;
+    bottom:38px;
+    width:170px;
+    height:180px;
+    scale:1;
+    z-index:2;
+  }
+  .lighthouse{right:8%;top:8px;width:84px;height:104px;scale:1}
+  .ocean-islet,.ocean-bird{display:none}
+  .ocean-islet:first-child{
+    display:block;
+    left:80%!important;
+    top:auto!important;
+    bottom:110px;
+    width:80px;
+    height:60px;
+  }
+}
+@media(min-width:480px) and (max-width:760px){
+  .island-map{padding-left:60px;padding-right:60px}
+  .project-island:nth-of-type(odd){align-self:flex-start}
+  .project-island:nth-of-type(even){align-self:flex-end}
+}
+@media(prefers-reduced-motion:reduce){.works-page *, .works-page *:after{animation:none!important;transition:none!important}}
